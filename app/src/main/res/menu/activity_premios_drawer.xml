@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/perfil"
+            android:icon="@drawable/editar"
+            android:title="Dados Pessoais" />
+        <item
+            android:icon="@drawable/cadastro"
+            android:id="@+id/indicacoes"
+            android:title="Indicar" />
+        <item
+            android:id="@+id/premio"
+            android:icon="@drawable/premios"
+            android:title="Premios" />
+        <item
+            android:id="@+id/status"
+            android:icon="@drawable/status_branco"
+            android:title="Status" />
+        <item
+            android:id="@+id/configuracoes"
+            android:icon="@drawable/configuracoes"
+            android:title="Fale Conosco" />
+        <item
+            android:id="@+id/sair"
+            android:icon="@drawable/sair"
+            android:title="Sair" />
+    </group>
+
+</menu>

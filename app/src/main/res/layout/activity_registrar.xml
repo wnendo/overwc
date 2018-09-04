@@ -1,0 +1,216 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="privateapp.statobr.com.privateapp.login.Login">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="50dp"
+        android:text="Registrar"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:typeface="sans" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="35dp"
+                android:text="Nome:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="90dp"
+                android:text="Telefone:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="140dp"
+                android:text="E-mail:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="195dp"
+                android:text="Confirmaçao de E-mail:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="245dp"
+                android:text="Senha:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="300dp"
+                android:text="CPF:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="355dp"
+                android:text="RG:"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_alignTop="@+id/textView6"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:hint="Digite seu RG"
+                android:inputType="number"
+                android:maxLength="14"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/cpf"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/textView7"
+                android:layout_alignTop="@+id/textView7"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:hint="Digite seu CPF"
+                android:inputType="number"
+                android:maxLength="14"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/senhaRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:layout_alignTop="@+id/textView8"
+                android:layout_marginTop="7dp"
+                android:layout_alignStart="@+id/textView7"
+                android:ems="10"
+                android:hint="Digite uma senha"
+                android:inputType="textPassword"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/emailConf"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_alignTop="@+id/textView5"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:layout_marginEnd="50dp"
+                android:hint="Digite seu e-mail novamente"
+                android:inputType="textEmailAddress"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/emailRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:hint="exemplo@statobr.com"
+                android:inputType="textEmailAddress"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/telefone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_alignTop="@+id/textView3"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:hint="DDD + Numero"
+                android:inputType="number"
+                android:maxLength="14"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/nome"
+                android:layout_marginEnd="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_marginTop="6dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Insira o nome"
+                android:inputType="textCapWords"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/registrar"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/rg"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:text="Confirmar"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/voltarRegistro"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/rg"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:text="Voltar"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

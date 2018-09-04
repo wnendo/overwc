@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="privateapp.statobr.com.privateapp.Menus">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_menus"
+        android:id="@+id/include"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/indicarUsuarios"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/cadastro_branco" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/statusUsuario"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="250dp"
+        app:srcCompat="@drawable/status_branco" />
+
+    <TextView
+        android:id="@+id/textIndicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indicar"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:typeface="sans"
+        android:layout_marginTop="110dp"/>
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="18dp"
+        android:layout_marginLeft="200dp"
+        android:layout_gravity="center"
+        android:typeface="sans"
+        android:layout_marginTop="360dp"/>
+
+    <TextView
+        android:id="@+id/textCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="360dp"
+        android:text="Prêmios"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:typeface="sans" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/premiosUsuario"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/premios_branco" />
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="privateapp.statobr.com.privateapp.ex.Indicar">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_indicar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="70dp"
+                android:text="Indicaçao"
+                android:textColor="#000000"
+                android:textSize="28sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="135dp"
+                android:text="Nome:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="200dp"
+                android:text="Telefone:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="265dp"
+                android:text="E-mail:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="330dp"
+                android:text="Cargo:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="395dp"
+                android:text="Empresa:"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/empresa"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="400dp"
+                android:ems="10"
+                android:hint="Digite a Empresa em que trabalha ou trabalhou"
+                android:inputType="text"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/cargo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="335dp"
+                android:ems="10"
+                android:hint="Digite o ultimo cargo em que atuou ou atua"
+                android:inputType="text"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/emailInd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="270dp"
+                android:ems="10"
+                android:hint="exemplo@statobr.com"
+                android:inputType="textEmailAddress"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/telefoneInd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="205dp"
+                android:ems="10"
+                android:hint="DDD + Numero"
+                android:inputType="number"
+                android:maxLength="14"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/nomeInd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:focusable="true"
+                android:hint="Insira o nome"
+                android:inputType="textCapWords"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/indicar"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/empresa"
+                android:layout_marginStart="230dp"
+                android:layout_marginTop="50dp"
+                android:text="Confirmar"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/voltarCad"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/empresa"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:text="Voltar"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
+
